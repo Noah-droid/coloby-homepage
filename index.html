@@ -1,649 +1,924 @@
+index.html
+
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Dashboard - Coloby</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
 
-  <title>Coloby.org | Learn, Code, Collaborate and Socialize</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicons -->
+    <!-- <link href="assets/img/favicon.png" rel="icon" />
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" /> -->
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/Coloby.png" rel="apple-touch-icon">
+    <!-- Google Fonts
+    <link href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+      rel="stylesheet"
+    /> -->
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="assets/vendor/bootstrap-icons/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet" />
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet" />
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-<!-- 
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-213947567-1">
-</script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <!-- GOOGLE FONTS -->
 
-  gtag('config', 'UA-213947567-1');
-</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
 
-<!---Google Adsense---->
-<!--<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8862497944065261"
-     crossorigin="anonymous"></script> -->
-  
-  
-  <meta name="propeller" content="8b350727bdbac12e57433b444ca1249d">
-  <script async="async" data-cfasync="false" src="//upgulpinon.com/1?z=5364699"></script>
-  <script>(function(s,u,z,p){s.src=u,s.setAttribute('data-zone',z),p.appendChild(s);})(document.createElement('script'),'https://inklinkor.com/tag.min.js',5364703,document.body||document.documentElement)</script>
-</head>
+    <!-- SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
 
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div class="logo">
-        <h1><a href="index.html"><span>Coloby</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/work.css" />
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+      <div class="d-flex align-items-center justify-content-between">
+        <a href="#" class="logo d-flex align-items-center">
+          <img src="assets/img/colobyIcon.png" alt="" />
+          <span class="d-none d-lg-block">Coloby</span>
+        </a>
+        <i class="bi bi-list toggle-sidebar-btn"></i>
       </div>
+      <!-- End Logo -->
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#features">Features</a></li>
-         
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      <div class="search-bar">
+        <form
+          class="search-form d-flex align-items-center"
+          method="POST"
+          action="#"
+        >
+          <input
+            type="text"
+            name="query"
+            placeholder="Search"
+            title="Enter search keyword"
+          />
+          <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+          </button>
+        </form>
+      </div>
+      <!-- End Search Bar -->
+
+      <nav class="header-nav ms-auto">
+        <ul class="d-flex align-items-center">
+          <li class="nav-item d-block d-lg-none">
+            <a class="nav-link nav-icon search-bar-toggle" href="#">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <!-- End Search Icon-->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-bell"></i>
+              <span class="badge bg-primary badge-number">4</span> </a
+            ><!-- End Notification Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications"
+            >
+              <li class="dropdown-header">
+                You have 4 new notifications
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-exclamation-circle text-warning"></i>
+                <div>
+                  <h4>Lorem Ipsum</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>30 min. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-x-circle text-danger"></i>
+                <div>
+                  <h4>Atque rerum nesciunt</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>1 hr. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-check-circle text-success"></i>
+                <div>
+                  <h4>Sit rerum fuga</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>2 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="notification-item">
+                <i class="bi bi-info-circle text-primary"></i>
+                <div>
+                  <h4>Dicta reprehenderit</h4>
+                  <p>Quae dolorem earum veritatis oditseno</p>
+                  <p>4 hrs. ago</p>
+                </div>
+              </li>
+
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+              <li class="dropdown-footer">
+                <a href="#">Show all notifications</a>
+              </li>
+            </ul>
+            <!-- End Notification Dropdown Items -->
+          </li>
+          <!-- End Notification Nav -->
+
+          <li class="nav-item dropdown">
+            <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+              <i class="bi bi-chat-left-text"></i>
+              <span class="badge bg-success badge-number">3</span> </a
+            ><!-- End Messages Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow messages"
+            >
+              <li class="dropdown-header">
+                You have 3 new messages
+                <a href="#"
+                  ><span class="badge rounded-pill bg-primary p-2 ms-2"
+                    >View all</span
+                  ></a
+                >
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-1.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Maria Hudson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>4 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-2.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>Anna Nelson</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>6 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="message-item">
+                <a href="#">
+                  <img
+                    src="assets/img/messages-3.jpg"
+                    alt=""
+                    class="rounded-circle"
+                  />
+                  <div>
+                    <h4>David Muldon</h4>
+                    <p>
+                      Velit asperiores et ducimus soluta repudiandae labore
+                      officia est ut...
+                    </p>
+                    <p>8 hrs. ago</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li class="dropdown-footer">
+                <a href="#">Show all messages</a>
+              </li>
+            </ul>
+            <!-- End Messages Dropdown Items -->
+          </li>
+          <!-- End Messages Nav -->
+
+          <li class="nav-item dropdown pe-3">
+            <a
+              class="nav-link nav-profile d-flex align-items-center pe-0"
+              href="#"
+              data-bs-toggle="dropdown"
+            >
+              <img
+                src="assets/img/demzy.jpg"
+                alt="Profile"
+                class="rounded-circle"
+              />
+              <span class="d-none d-md-block dropdown-toggle ps-2"
+                >A. Adeyemo</span
+              > </a
+            ><!-- End Profile Iamge Icon -->
+
+            <ul
+              class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile"
+            >
+              <li class="dropdown-header">
+                <h6>Adeyemo Ademola</h6>
+                <span>Web Designer</span>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-person"></i>
+                  <span>My Profile</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-gear"></i>
+                  <span>Account Settings</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-question-circle"></i>
+                  <span>Need Help?</span>
+                </a>
+              </li>
+              <li>
+                <hr class="dropdown-divider" />
+              </li>
+
+              <li>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <i class="bi bi-box-arrow-right"></i>
+                  <span>Sign Out</span>
+                </a>
+              </li>
+            </ul>
+            <!-- End Profile Dropdown Items -->
+          </li>
+          <!-- End Profile Nav -->
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      </nav>
+      <!-- End Icons Navigation -->
+    </header>
+    <!-- End Header -->
 
-    </div>
-  </header><!-- End Header -->
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+      <ul class="sidebar-nav" id="sidebar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">
+            <i class="bi bi-grid"></i>
+            <span>Dashboard</span>
+          </a>
+        </li>
+        <!-- End Dashboard Nav -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero">
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-globe"></i>
 
-    <div class="container">
-      <div class="row justify-content-between">
-        <div class="col-lg-7 pt-5 pt-lg-0 order-2 order-lg-1 d-flex align-items-center">
-          <div data-aos="zoom-out">
-            <h1>Join the Tech World using <br /> <span>Coloby</span></h1>
-            <h2>Learn, Code, Collaborate and Socialize</h2>
-            <div class="text-center text-lg-start">
-              <a href="options.html" class="btn-get-started scrollto">Get Started</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 order-1 order-lg-2 hero-img" data-aos="zoom-out" data-aos-delay="300">
-          <img src="assets/img/details-3.png" class="img-fluid animated" style="border-radius: 20px" alt="">
-        </div>
+            <span>Forums</span>
+          </a>
+        </li>
+        <!-- End Forums Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="pages-register.html">
+            <i class="bi bi-people-fill"></i> <span>Teams</span>
+          </a>
+        </li>
+        <!-- End Teams Page Nav -->
+
+        <li class="nav-item">
+          <a class="nav-link collapsed" href="index.html">
+            <i class="bi bi-megaphone-fill"></i>
+            <span>Job Board</span>
+          </a>
+        </li>
+        <!-- End Job Board Page Nav -->
+      </ul>
+    </aside>
+    <!-- End Sidebar-->
+
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Dashboard</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Dashboard</li>
+          </ol>
+        </nav>
       </div>
-    </div>
+      <!-- End Page Title -->
 
-    <svg class="hero-waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28 " preserveAspectRatio="none">
-      <defs>
-        <path id="wave-path" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z">
-      </defs>
-      <g class="wave1">
-        <use xlink:href="#wave-path" x="50" y="3" fill="rgba(255,255,255, .1)">
-      </g>
-      <g class="wave2">
-        <use xlink:href="#wave-path" x="50" y="0" fill="rgba(255,255,255, .2)">
-      </g>
-      <g class="wave3">
-        <use xlink:href="#wave-path" x="50" y="9" fill="#fff">
-      </g>
-    </svg>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about">
-      <div class="container-fluid">
-
+      <section class="section dashboard">
         <div class="row">
-          <div class="col-xl-5 col-lg-6 video-box d-flex justify-content-center align-items-stretch" data-aos="fade-right">
-            
-          </div>
+          <!-- Left side columns -->
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="features__container">
+                <div class="features__container-left">
+                  <!-- Forum Card -->
+                  <a href="" class="col-xxl-4 col-md-6"
+                    ><div>
+                      <div class="card info-card sales-card">
+                        <div class="card-body">
+                          <h5 class="card-title">Forums</h5>
 
-          <div class="col-xl-7 col-lg-6 icon-boxes d-flex flex-column align-items-stretch justify-content-center py-5 px-lg-5" data-aos="fade-left">
-            <h3 style="color: #17a2b8">Why Use Coloby?</h3>
-            <p>A few reasons why you should use Coloby.</p>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon"><i class="bx bx-fingerprint"></i></div>
-            <br>
-
-              <h4 class="title"><a href="">Ease of Use</a></h4>
-              <!-- <p class="description">Coloby is a system that is easier to use</p> -->
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-gift"></i></div>
-            <br>
-
-              <h4 class="title"><a href="">Fully Packaged Software</a></h4>
-            
-            </div>
-
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-atom"></i></div>
-            <br>
-
-              <h4 class="title"><a href="">Dynamism</a></h4>
-             <!--  <p class="description">Coloby is a dynamic software. It is easier to integrate your projects and ideas with Coloby.</p> -->
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Section -->
-
-    <!-- ======= Features Section ======= -->
-    <section id="features" class="features">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Features</h2>
-          <p style="color: #17a2b8">Check the Features</p>
-        </div>
-
-        <div class="row" data-aos="fade-left">
-          <div class="col-lg-3 col-md-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="50">
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
-              <h3><a href="#">Clobby</a></h3>
+                          <div class="d-flex align-items-center">
+                            <div
+                              class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                            >
+                              <i class="bi bi-globe"></i>
+                            </div>
+                            <div class="ps-3">
+                              <h6>Join Now</h6>
+                            </div>
                           </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="100">
-             <i class="ri-database-2-line" style="color: #47aeff;"></i>
-              <h3><a href="#">Code Compiler</a></h3>
-                           
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="150">
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
-              <h3><a href="#">Group Discussions</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="200">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
-              <h3><a href="#">P2P Chat</a></h3>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="250">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="#">Networking & Collaboration</a></h3>
-              
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="300">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="#">P2P Tutoring</a></h3>
-              
-            </div>
-          </div>
-        <!--   <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="350">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
-              <h3><a href="#">School Projects</a></h3>
-              
-            </div>
-          </div> -->
-         <!--  <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="400">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
-              <h3><a href="#">Work Projects</a></h3>
-              
-            </div>
-          </div> -->
-          
-       <!--    <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="500">
-              <i class="ri-disc-line" style="color: #b20969;"></i>
-              <h3><a href="#">Music Streams</a></h3>
-             
-            </div> -->
-          <!-- </div>
-          <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="550">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
-              <h3><a href="#">Virtual Collaboration</a></h3>
-             
-            </div>
-          </div> -->
-          <!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="600">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
-              <h3><a href="#">AI</a></h3>
-              
-            </div>
-          </div> -->
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                  <!-- End Forum Card -->
 
-<!-- <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box" data-aos="zoom-in" data-aos-delay="450">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
-              <h3><a href="#">And Lots More</a></h3>
-            </div>
-          </div>
- -->
-        </div>
+                  <!-- Mentor Card -->
+                  <a href="" class="col-xxl-4 col-md-6"
+                    ><div>
+                      <div class="card info-card sales-card">
+                        <div class="card-body">
+                          <h5 class="card-title">Mentors</h5>
 
-      </div>
-    </section>
-    <!-- End Features Section -->
-
-    <!-- ======= Counts Section ======= -->
-    <section id="counts" class="counts">
-      <div class="container">
-
-        <div class="row" data-aos="fade-up">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="count-box">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter" style="color: #17a2b8"></span>
-              <p>Happy Users</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-md-0">
-            <div class="count-box">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter" style="color: #17a2b8"></span>
-              <p>Projects</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter" style="color: #17a2b8"></span>
-              <p>Hours Of Support</p>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 mt-5 mt-lg-0">
-            <div class="count-box">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter" style="color: #17a2b8"></span>
-              <p>Team</p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Counts Section -->
-
-    <!-- ======= Details Section ======= -->
-    <section id="details" class="details">
-      <div class="container">
-
-        <div class="row content">
-          <div class="col-md-4" data-aos="fade-right">
-            <img src="assets/img/details-1.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-8 pt-4" data-aos="fade-up">
-            <h3 style="color: #17a2b8";>Get to meet your Niche.</h3>
-            <br>
-            <br>
-            <br>
-
-            <p class="fst-italic">
-              We realised that many find it difficult to start a tech journey. Most wasting time doing mundane task, unable to make use of the knowledge they gather. That's why Coloby was developed. We wanted to create a space whereby geeks, noobies, experts and work-in-progress can get to meet and develop themselves - sharing and tapping from each others knowledge 
-            </p>
-            <!-- <ul>
-              <li><i class="bi bi-check"></i> Looking for the complete experience? Coloby is easy to use and access. A Service that you can use on the go.</li>
-              <li><i class="bi bi-check"></i> Consider taking Coloby through one of your mountain paths at work. We'll provide the speed, and the effort too!.</li>
-              <li><i class="bi bi-check"></i> Got a competitive spirit? Sign up for Coloby ! Your work is 2x done faster with your collegues.</li>
-              <li><i class="bi bi-check"></i> Experience Coloby's beauty without all of that annoying exercise</li>
-            </ul> -->
-            <p>
-              We are open to your new ideas from different areas of specialization.
-            </p>
-          </div>
-        </div>
-
-      <!--   <div class="row content">
-          <div class="col-md-4 order-1 order-md-2" data-aos="fade-left">
-            <img src="assets/img/details-2.png" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-8 pt-5 order-2 order-md-1" data-aos="fade-up">
-            <h3 style="color: #17a2b8">How Coloby Works</h3>
-            <p class="fst-italic">
-              Here is a short explanation on how Coloby works
-            </p>
-            <p>First you need to have an account with us before you can get started.
-
-Secondly, you'll have the access to create your projects, ideas, assignments, etc.
-
-We decided not to create a very complex software as a result, all you can do on the site is to create projects.
-
-Communications and Feedbacks, tracking of projects, ideas, assignments and the likes can be done via chat. We are doing this so as to make you not feel burdened at all.
-            </p>
-            
-          </div>
-        </div> -->
-
-       
-
-       
-
-      </div>
-    </section><!-- End Details Section -->
-
-    
-    <!-- ======= Testimonials Section ======= -->
-<!--     <section id="testimonials" class="testimonials">
-      <div class="container">
-
-        <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Albert Herter</h3>
-                <h4>Ceo &amp; Founder</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                 Wow! Coloby made me realize how much I love being free with my work. After creating projects, I can safely say that coloby is my favorite project execution tool all time!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Gosh, this really blew my mind. So simple and functional, and also so stress free. Come on, I'm using coloby till I retire. Amazing!
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Wow! I keyed in to the online store offer last year and guess what, I now have a brand store of my own online thanks to coloby.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-
-                 If you want to get better work done, head to coloby. I mean, seriously. It's like sitting next to a campfire and just talk till the sunrise, woah. You know? It's like that.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-              </div>
-            </div>
-
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section> -->
-    <!-- End Testimonials Section -->
-
-
-
-
-    <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq section-bg">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>F.A.Q</h2>
-          <p style="color: #17a2b8">Frequently Asked Questions</p>
-        </div>
-
-        <div class="faq-list">
-          <ul>
-            <li data-aos="fade-up">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" class="collapse" data-bs-target="#faq-list-1">How does Coloby work? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-1" class="collapse show" data-bs-parent=".faq-list">
-                <p>
-                  Coloby works by connecting you to geeks from the same Niche.
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-2" class="collapsed">Do I pay for Coloby Services? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-2" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                 Coloby is a free software. 
-                </p>
-              </div>
-            </li>
-
-            <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-3" class="collapsed">Why Coloby? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-3" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Coloby is an software that promotes connectivity of people from the same area of focus. Try Coloby today!!
-                </p>
-              </div>
-            </li>
-
-            <!-- <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-4" class="collapsed">Who is Agent Noah? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-4" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                 Agent Noah is Coloby's primary agent designed to take your orders via chat.
-                </p>
-              </div>
-            </li> -->
-
-            <!-- <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-bs-toggle="collapse" data-bs-target="#faq-list-5" class="collapsed">Does Coloby render services related to all fields? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-              <div id="faq-list-5" class="collapse" data-bs-parent=".faq-list">
-                <p>
-                  Coloby services are as but many and not limited to the features above. It is a service built to get your projects, ideas and more done with ease
-                </p>
-              </div>
-            </li> -->
-
-          </ul>
-        </div>
-
-      </div>
-    </section><!-- End F.A.Q Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container">
-
-        <div class="section-title" data-aos="fade-up">
-          <h2>Contact</h2>
-          <p style="color: #17a2b8">Contact Us</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt" style="color: #17a2b8"></i>
-                <h4 style="color: #17a2b8">Location:</h4>
-                <p style="color: #17a2b8">A.Adeoje Street, Ibadan, Nigeria</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope" style="color: #17a2b8"></i>
-                <h4 style="color: #17a2b8">Email:</h4>
-                <p style="color: #17a2b8"><a href="mailto:coworkcoloby@gmail.com">info@Coloby.com</a></p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4 style="color: #17a2b8">Call:</h4>
-                <p style="color: #17a2b8"><a href="tel:+2349022393251">+234 9022 3932 51</a></p>
-              </div>
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="200">
-
-            <form netlify method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                          <div class="d-flex align-items-center">
+                            <div
+                              class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                            >
+                              <i class="bi bi-book"></i>
+                            </div>
+                            <div class="ps-3">
+                              <h6>Find a mentor</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                  <!-- End Mentor Card -->
                 </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                <div class="features__container-right">
+                  <!-- Job Board Card -->
+                  <a href="" class="col-xxl-4 col-md-6"
+                    ><div>
+                      <div class="card info-card sales-card">
+                        <div class="card-body">
+                          <h5 class="card-title">Job Board</h5>
+
+                          <div class="d-flex align-items-center">
+                            <div
+                              class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                            >
+                              <i class="bi bi-megaphone-fill"></i>
+                            </div>
+                            <div class="ps-3">
+                              <h6>Find a Job</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                  <!-- End Job Board Card -->
+                  <!-- Teams Card -->
+                  <a href="" class="col-xxl-4 col-md-6"
+                    ><div>
+                      <div class="card info-card sales-card">
+                        <div class="card-body">
+                          <h5 class="card-title">Teams</h5>
+
+                          <div class="d-flex align-items-center">
+                            <div
+                              class="card-icon rounded-circle d-flex align-items-center justify-content-center"
+                            >
+                              <i class="bi bi-people-fill"></i>
+                            </div>
+                            <div class="ps-3">
+                              <h6>Create a Team</h6>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div></a
+                  >
+                  <!-- End Teams Card -->
                 </div>
               </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+
+              <!-- Events Card -->
+              <div class="events__container">
+                <p class="events__text">Our Events</p>
+                <div class="events__body">
+                  <div class="left__events">
+                    <swiper-container class="mySwiper" pagination="true">
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                    </swiper-container>
+                  </div>
+                  <div class="right__events">
+                    <swiper-container class="mySwiper" pagination="true">
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                      <swiper-slide>
+                        <a href="#">
+                          <div class="second">
+                            <p class="date">Mar 22</p>
+                            <p class="text">
+                              TechX 2023: Innovations and Disruptions in the
+                              Digital Era
+                            </p>
+                            <div class="inside">
+                              <div>
+                                <img src="assets/img/demzy.jpg" alt="" />
+                              </div>
+                              <div>
+                                <small class="name__text"
+                                  >Adeyemo Ademola <br />
+                                  Developer at Tech hub
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </a></swiper-slide
+                      >
+                    </swiper-container>
+                  </div>
+                </div>
+                <div>
+                  <a href="index.html" class="view__events">View more Events</a>
+                </div>
               </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="footer-info">
-              <h3>Coloby</h3>
-              <p class="pb-3"><em>Designed to get your work done.</em></p>
-              <p>
-                A.Adeoje Street, Ibadan, Nigeria<br><br>
-                <strong>Phone:</strong> +234 9022 3932 51<br>
-                <strong>Email:</strong> <a href="mailto:coworkcoloby@gmail.com" style="color: white">info@Coloby.com</a><br>
-              </p>
-              <div class="social-links mt-3">
-                <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-                <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-                <a href="https://github.com/Noah-droid/colobyv2" class="instagram"><i class="bx bxl-github"></i></a>
-                <a href="https://www.linkedin.com/in/coloby" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-              </div>
+              <!-- End Events Card -->
             </div>
           </div>
+          <!-- End Left side columns -->
 
-         <!--  <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div> -->
+          <!-- Right side columns -->
+          <div class="col-lg-4">
+            <!-- Recent Activity -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
 
-        <!--   <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Artificial Intelligence</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div> -->
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+                </ul>
+              </div>
 
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
-            <p>Register your mail to access our newsletters regularly</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe" netlify>
-            </form>
+              <div class="card-body">
+                <h5 class="card-title">Recent Activity <span>| Today</span></h5>
 
+                <div class="activity">
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">32 min</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-success align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Quia quae rerum
+                      <a href="#" class="fw-bold text-dark"
+                        >explicabo officiis</a
+                      >
+                      beatae
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">56 min</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-danger align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Voluptatem blanditiis blanditiis eveniet
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">2 hrs</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-primary align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Voluptates corrupti molestias voluptatem
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">1 day</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-info align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Tempore autem saepe
+                      <a href="#" class="fw-bold text-dark"
+                        >occaecati voluptatem</a
+                      >
+                      tempore
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">2 days</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-warning align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Est sit eum reiciendis exercitationem
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+
+                  <div class="activity-item d-flex">
+                    <div class="activite-label">4 weeks</div>
+                    <i
+                      class="bi bi-circle-fill activity-badge text-muted align-self-start"
+                    ></i>
+                    <div class="activity-content">
+                      Dicta dolorem harum nulla eius. Ut quidem quidem sit quas
+                    </div>
+                  </div>
+                  <!-- End activity item-->
+                </div>
+              </div>
+            </div>
+            <!-- End Recent Activity -->
+            <!-- News & Updates  -->
+            <div class="card">
+              <div class="filter">
+                <a class="icon" href="#" data-bs-toggle="dropdown"
+                  ><i class="bi bi-three-dots"></i
+                ></a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                  <li class="dropdown-header text-start">
+                    <h6>Filter</h6>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Today</a></li>
+                  <li><a class="dropdown-item" href="#">This Month</a></li>
+                  <li><a class="dropdown-item" href="#">This Year</a></li>
+                </ul>
+              </div>
+
+              <div class="card-body pb-0">
+                <h5 class="card-title">
+                  News &amp; Updates <span>| Today</span>
+                </h5>
+
+                <div class="news">
+                  <div class="post-item clearfix">
+                    <img src="assets/img/news-1.jpg" alt="" />
+                    <h4><a href="#">Nihil blanditiis at in nihil autem</a></h4>
+                    <p>
+                      Sit recusandae non aspernatur laboriosam. Quia enim
+                      eligendi sed ut harum...
+                    </p>
+                  </div>
+
+                  <div class="post-item clearfix">
+                    <img src="assets/img/news-2.jpg" alt="" />
+                    <h4><a href="#">Quidem autem et impedit</a></h4>
+                    <p>
+                      Illo nemo neque maiores vitae officiis cum eum turos elan
+                      dries werona nande...
+                    </p>
+                  </div>
+
+                  <div class="post-item clearfix">
+                    <img src="assets/img/news-3.jpg" alt="" />
+                    <h4>
+                      <a href="#"
+                        >Id quia et et ut maxime similique occaecati ut</a
+                      >
+                    </h4>
+                    <p>
+                      Fugiat voluptas vero eaque accusantium eos. Consequuntur
+                      sed ipsam et totam...
+                    </p>
+                  </div>
+
+                  <div class="post-item clearfix">
+                    <img src="assets/img/news-4.jpg" alt="" />
+                    <h4><a href="#">Laborum corporis quo dara net para</a></h4>
+                    <p>
+                      Qui enim quia optio. Eligendi aut asperiores enim
+                      repellendusvel rerum cuder...
+                    </p>
+                  </div>
+
+                  <div class="post-item clearfix">
+                    <img src="assets/img/news-5.jpg" alt="" />
+                    <h4>
+                      <a href="#">Et dolores corrupti quae illo quod dolor</a>
+                    </h4>
+                    <p>
+                      Odit ut eveniet modi reiciendis. Atque cupiditate libero
+                      beatae dignissimos eius...
+                    </p>
+                  </div>
+                </div>
+                <!-- End sidebar recent posts-->
+              </div>
+            </div>
+            <!-- End News & Updates -->
           </div>
-
+          <!-- End Right side columns -->
         </div>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <div class="container">
-      <div class="copyright">
-        &copy; Copyright <strong><span>Coloby</span></strong>. All Rights Reserved
-      </div>
-      <!-- <div class="credits">
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
-        Designed by <a href="https://www.coloby.org/">Coloby</a>
-      </div> -->
-    </div>
-  </footer><!-- End Footer -->
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-  <div id="preloader"></div>
+    <!-- SWIPER JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        // Optional parameters
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+        // If we need pagination
+        pagination: {
+          el: ".swiper-pagination",
+        },
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-        <script src="//code.tidio.co/bknjgb9cvbooha2tfjxmobmq1q9n1avg.js" async></script>
+        // Navigation arrows
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
 
-</body>
+        // And if we need scrollbar
+        scrollbar: {
+          el: ".swiper-scrollbar",
+        },
+      });
+    </script>
 
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
